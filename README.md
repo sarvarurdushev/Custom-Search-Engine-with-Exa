@@ -35,29 +35,6 @@ With Python installed, let's go ahead and use pip to download Exa:
 
 <pre> ```pip install exa_py``` </pre>
 
-
-Title Image
-Build a Custom Search Engine with Exa
-Prerequisites: Python fundamentals, Command Line
-Versions: Python 3.10
-Read Time: 45 minutes
-
-# Introduction
-Picture this: You read a funny tweet (probably ours...), but you forgot who tweeted it and where you saw it. You’re sad. What if there was a search engine that rediscovers exactly what you’re thinking about?
-
-It's now possible with a specific kind of machine learning called natural language processing (NLP). It teaches computers to understand, interpret, and generate human language.
-
-In this tutorial, we'll build a custom search engine using an API with LLM capabilities! 🚀
-
-LLMs (short for large language models) are a powerful tool within the broader field of NLP. These models are trained on insane amounts of data and can grasp the intricacies of human language. 🤯 A popular LLM that you might already be using is GPT-3.
-
-Tokenization Example
-LLMs leverage deep learning techniques to generate text, translate languages, answer questions, and so much more. The model estimates the probability of a token or a sequence of tokens in a sequence. A token refers to a unit of language extracted from a larger piece of text.
-
-However, accessing LLMs is a little tricky since training models is both time-consuming and expensive. APIs solve this. APIs serve as a tool to access NLP tasks, such as text generation, translation, summarization, and more, which we'll explore today!
-
-Let's learn how we can even build our very own custom search engine! 👀
-
 ## Exa API
 Exa (formerly "Metaphor") is an API (application programming interface) that retrieves the best content on the web. With Exa, anyone can semantically search the web to get high-quality, relevant information. With Exa's technology, we can rediscover the content on the internet. Unlike Google, which relies on keyword search (matching the exact words of the query to the web content), Exa can understand both the user's input and the content out there. Wow, right?
 
