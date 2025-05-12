@@ -1,37 +1,36 @@
 # Custom-Search-Engine-with-Exa
-Developed a web-based custom search engine using Exa API to aggregate and display search results from multiple sources. Implemented with Python and React
+This project is a web-based custom search engine built using Python and React, powered by the Exa API. It aggregates results from across the internet and displays them in a user-friendly interface.
 # Introduction
-Picture this: You read a funny tweet (probably ours...), but you forgot who tweeted it and where you saw it. You’re sad. What if there was a search engine that rediscovers exactly what you’re thinking about?
+Imagine this: you saw a hilarious tweet (probably one of ours 😎), but now you can't remember who posted it or where you saw it. Bummer, right? What if there was a smart search engine that could help you find exactly what you're thinking of?
 
-It's now possible with a specific kind of machine learning called natural language processing (NLP). It teaches computers to understand, interpret, and generate human language.
+Thanks to natural language processing (NLP), that's now possible. NLP is a field of machine learning that enables computers to understand, interpret, and even generate human language.
 
-In this tutorial, we'll build a custom search engine using an API with LLM capabilities! 🚀
+In this guide, we’ll show you how to build a custom search engine using an API enhanced with LLM (Large Language Model) features. 🚀
 
-LLMs (short for large language models) are a powerful tool within the broader field of NLP. These models are trained on insane amounts of data and can grasp the intricacies of human language. 🤯 A popular LLM that you might already be using is GPT-3.
 ![image](https://github.com/user-attachments/assets/a127f2b1-0193-4e74-a1fb-e37109dba69e)
-LLMs leverage deep learning techniques to generate text, translate languages, answer questions, and so much more. The model estimates the probability of a token or a sequence of tokens in a sequence. A token refers to a unit of language extracted from a larger piece of text.
+LLMs are powerful models trained on massive datasets that can comprehend the subtleties of human language. One popular example is GPT-3.
 
-However, accessing LLMs is a little tricky since training models is both time-consuming and expensive. APIs solve this. APIs serve as a tool to access NLP tasks, such as text generation, translation, summarization, and more, which we'll explore today!
+LLMs work by predicting the likelihood of a word or sequence of words, which is called tokenization — breaking down text into smaller, meaningful chunks.
 
-Let's learn how we can even build our very own custom search engine! 👀
+Training these models can be very resource-intensive, but APIs give us easy access to their capabilities. Through them, we can tap into tools for text generation, translation, summarization, and more.
 
-## Exa API
-Exa (formerly "Metaphor") is an API (application programming interface) that retrieves the best content on the web. With Exa, anyone can semantically search the web to get high-quality, relevant information. With Exa's technology, we can rediscover the content on the internet. Unlike Google, which relies on keyword search (matching the exact words of the query to the web content), Exa can understand both the user's input and the content out there. Wow, right?
+Let’s dive in and build a smart search engine! 👀
 
-Exa utilizes LLMs as a core component, and has been extensively trained to help computers understand human language.
+## What is Exa API?
+Exa (previously known as "Metaphor") is a semantic search API that finds the most relevant content on the web. It doesn’t just match exact words like Google does — it understands your intent and meaning.
 
-In this tutorial, we will use Exa's capabilities to build a basic search engine that can help you find exactly what you are searching for.
+Exa uses LLMs at its core to process and understand natural language, making it super useful for rediscovering content based on meaning rather than keywords.
 
-# Set Up
-First, we need to create an Exa account to access an API key for building out the "search" functionality of our search engine! You'll automatically get 1000 free requests just for signing up. After creating an account, navigate to "Overview" to retrieve your API key
+In this tutorial, we’ll use Exa’s capabilities to create a simple yet powerful search tool that can return highly relevant results.
+
+# Getting Set Up
+To get started, create an account on Exa to receive your API key — you’ll get 1000 free requests right off the bat. Once signed in, head to the “Overview” page to grab your key.
 ![image](https://github.com/user-attachments/assets/1b3ee402-7803-4b39-88d3-e3c9dc30b8fe)
-Note: Keep your API keys private and safe and avoid sharing and posting them online. 🔒
+⚠️ Important: Always keep your API key safe and never share it publicly!
 
-For this project, we'll need Python 3 and pip (package installer) installed.
+Make sure you have Python 3 and pip installed. Open your preferred code editor (we suggest VS Code) and create a new file named main.py.
 
-Assuming that we have those two installed, let's open up our preferred code editor (we recommend VS Code) and create a new file called main.py.
-
-## Packages and Imports
+## Installing Packages and Imports
 With Python installed, let's go ahead and use pip to download Exa:
 
 <pre> ```pip install exa_py``` </pre>
@@ -77,11 +76,11 @@ For this project, we'll need Python 3 and pip (package installer) installed.
 Assuming that we have those two installed, let's open up our preferred code editor (we recommend VS Code) and create a new file called main.py.
 
 ## Packages and Imports
-With Python installed, let's go ahead and use pip to download Exa:
+Use pip to install the Exa Python package:
 <pre> ```pip install exa_py``` </pre>
 
 
-Note: If this command doesn't work, try:
+If that doesn’t work, try:
 <pre> ```pip3 install exa_py``` </pre>
 
 In our main.py file, we're going to import Exa, and initialize Exa with our API key!
@@ -89,7 +88,7 @@ In our main.py file, we're going to import Exa, and initialize Exa with our API 
 <pre> ```from exa_py import Exa
 
 exa = Exa('YOUR_KEY_HERE')``` </pre> 
-# Getting Started with Searching! ⚡
+# Performing a Search
 In the same file, let's create a variable called query, which will hold the response to the input of what we want to search!
 <pre> ```from exa_py import Exa
 
